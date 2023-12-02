@@ -1,0 +1,122 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #7C9D96;
+    padding: 3% 15% 5%;
+}
+body, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation bar  */
+.navbar {
+    background-color: #7C9D96;
+    padding: 0 0 4.5rem;
+}
+
+.brand-title {
+    width: 15%;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: #192655;
+}
+
+.nav-list {
+    padding: 0 18px;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.skill-row{
+    margin: 80px auto;
+    text-align: justify;
+    width: 55%;
+}
+
+/* Hero section styling */
+#hero-section {
+    background-image: url(images/group-portrait-adorable-puppies.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.948);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.start-search {
+    background-color: #192655;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Footer styling */
+footer {
+    background-color: #7C9D96;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*bootstrap*/
+@media (max-width: 1024px){
+    #title{
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+    #title{
+        padding: 0;
+    }
+    .hero-text{
+        padding: 20px;
+    }
+    #hero-section{
+        padding: 20px;
+    }
+}

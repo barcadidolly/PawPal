@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paw Pal</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="indexstyles.css">
+     <!--Google Fonts-->
+        <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;700;900&family=Montserrat:wght@400;700;900&family=Ubuntu:wght@300;700&display=swap"
+        rel="stylesheet"
+    />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <section id="title">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <img class="brand-title" src="images/pawpal.png" alt="logo">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link links" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item links">
+                        <a class="nav-link" href="catalogue.html">Catalogue</a>
+                    </li>
+                    <li class="nav-item links">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <section id="hero-section">
+            <div class="hero-text">
+                <h2><b>Find your new best friend!</h2></b>
+                <p>Search through our extensive collection of dog breeds and find the perfect match for you and your family.</p>
+                <button class="start-search" onclick="redirectToNextPage()">Start Searching</button>
+            </div>
+            <script>
+                function redirectToNextPage() {
+                    window.location.href = "catalogue.html";
+                }
+            </script>
+        </section>
+    </section>
+    
+    <section id="breeds-section">
+        <h3><b>Popular Dog Breeds</b></h3>
+        <table class="breeds-table">
+            <tr>
+                <td>
+                    <div class="breed-card">
+                        <img src="images/labrador.jpg" alt="Labrador">
+                        <h4><b>Labrador Retriever</h4></b>
+                        <p>The Labrador Retriever is America's favorite breed.</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="breed-card">
+                        <img src="images/germanshepherd.jpg" alt="German Shepherd">
+                        <h4><b>German Shepherd</b></h4>
+                        <p>The German Shepherd is highly intelligent and loyal.</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="breed-card">
+                        <img src="images/goldenretriever.jpg" alt="Golden Retriever">
+                        <h4><b>Golden Retriever</h4></b>
+                        <p>The Golden Retriever is known for its friendly and eager-to-please nature.</p>
+                    </div>
+                </td>
+            </tr>            
+        </table>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Paw Pal. All rights reserved. This Website uses Data from the PETFINDER API.</p>
+    </footer>
+</body>
+</html>

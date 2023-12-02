@@ -1,0 +1,177 @@
+body, h6, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+}
+body{
+    background-color: #7C9D96;
+}
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Search section styles */
+#search-section {
+    background-image: url(images/group-portrait-five-adorable-puppies.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.search-text {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.prev-search-button{
+    background-color: #192655;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.next-search-button{
+    background-color: #192655;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.search-button{
+    background-color: #192655;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.search-button:hover{
+    background-color: #3757cc;
+    color: white;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #7C9D96;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+/* Navigation link styles */
+.navbar-nav li a {
+    font-size: 20px; 
+
+}
+/* Title section styles */
+#title {
+    background-color: #7C9D96;
+    padding: 3% 15% 5%;
+}
+
+.brand-title {
+    width: 15%;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-list {
+    padding: 0 18px;
+}
+
+#results-section{
+    background-color: #7C9D96;
+    font-family: 'Montserrat',sans-serif;
+}
+#dogsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skill-row {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.animal-column {
+    background-color: #ddd;
+    flex: 0 0 30%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.animal-column img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.animal-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.animal-column p {
+    font-size: 14px;
+}
+
+/*bootstrap*/
+@media (max-width: 1024px){
+    #title{
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+    #title{
+        padding: 0px;
+    }
+    .search-text{
+        height:fit-content;
+        padding: 20px
+    }
+    body{
+        background-color: #7C9D96;
+    }
+}
+@media(max-width: 425px){
+    #title{
+        padding: 0;
+    }
+    #search-section{
+        width: 300px;
+    }
+    .search-text{
+        width: 80px;
+        height: 20px;
+    }
+}
